@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Assistant, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  background-color: #ffffff;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b6b1b1;
+}
+
+.myntra_home {
+  height: 45px;
+}
+
+.logo_container {
+  max-width: 100%;
+  margin-left: 15px;
+  height: auto;
+  
+}
+.logoimg{
+     height: auto;
+     max-width: 100%;
+}
+
+.action_bar {
+  margin-right: 6%;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 200px;
+}
+
+.nav_bar {
+  display: flex;
+  min-width: 500px;
+  justify-content: space-evenly;
+  gap: 40px;
+  
+}
+
+.nav_bar a {
+  font-size: 14px;
+  letter-spacing: .3px;
+  color: #282c3f;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 28px 0;
+  border-bottom: 5px solid #ffffff;
+  font-weight: bold;
+  
+}
+
+.nav_bar a:hover {
+  border-bottom: 4px solid #f54e77;
+}
+
+.action_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  font-size: 4px;
+  align-items: center;
+}
+
+/* Banner */
+/*.banner_container {
+  margin: 40px 0;
+}*/
+
+.banner_image {
+  height: 800px;
+  width: 100%;
+  max-width: 100% ;
+  
+  
+  
+}
+
+/* Headings */
+.category_heading {
+  text-transform: uppercase;
+  color: #3e4152;
+  letter-spacing: .15em;
+  font-size: 1.8em;
+  margin: 50px 0 10px 30px;
+  font-weight: 700;
+}
+
+/* Service Items */
+.category_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sale_item {
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Booking Form */
+.form_container {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #f54e77;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #d93e65;
+}
+
+/* floating button */
+.floating-buttons {
+  position: fixed;
+  left: 40px;
+  bottom: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media (max-width: 500px) {
+  .floating-buttons {
+    flex-direction: row;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+
+.float-btn {
+  width: 80px;
+  height: 150px;
+  border-radius: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.float-btn:hover {
+  transform: scale(1.1);
+}
+
+.float-btn img {
+  width: 100px;
+  height: 100px;
+}
+
+
+/* Footer */
+.footer_container {
+  padding: 60px 40px;
+  background: #FAFBFC;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.footer_column {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.footer_column h3 {
+  color: #282c3f;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.footer_column a, .footer_column p {
+  color: #696b79;
+  font-size: 14px;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.footer_column a:hover {
+  text-decoration: underline;
+}
+
+footer hr {
+  margin: 20px auto;
+  width: 90%;
+  border: 0.5px solid #e1e1e1;
+}
+
+.copyright {
+  color: #94969f;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}

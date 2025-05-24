@@ -1,0 +1,114 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Trayemkeshwar Pooja Booking</title>
+    <link rel="stylesheet" href="tem.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  </head>
+  <body>
+          
+    <header>
+      <div class="logo_container">
+        <a href="#"><img class="logoimg" src="images/logo.jfif" alt="Trayemkeshwar"></a>
+      </div>
+      <nav class="nav_bar">
+        <a href="#">Home</a>
+        <a href="#services">Pooja Services</a>
+        <a href="#booking">Book Pooja</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#">About</a>
+      </nav>
+     <div class="action_bar">
+            <div class="action_container">     
+                <span class="material-symbols-outlined action_icon"> <a style="text-decoration: none; color: rgb(241, 8, 8);" href="admin/login.php">person</a></span>
+                <span class="action_name"> <a style="text-decoration: none; color: rgb(238, 10, 10);" href="admin/login.php">Admin</a></span>
+            </div>
+</div>
+    </header>
+
+    <main>
+      <div class="banner_container">
+        <img class="banner_image" src="images/banner.jpg" alt="Trayemkeshwar Pooja Banner">
+      </div>
+
+      <div class="category_heading" id="services">Available Pooja Services</div>
+      <div class="category_items">
+        <div><img class="sale_item" src="images/kk.jpg.webp" alt="Kal Sarp Dosh"><p>Kal Sarp Dosh Nivaran</p></div>
+        <div><img class="sale_item" src="images/ss.jpg.jpg" alt="Rudrabhishek"><p>Rudrabhishek</p></div>
+        <div><img class="sale_item" src="images/nav.jpg" alt="Navgrah Shanti"><p>Navgrah Shanti</p></div>
+        <div><img class="sale_item" src="images/mm.jfif" alt="Mahamrityunjay Jaap"><p>Mahamrityunjay Jaap</p></div>
+      </div>
+
+      <div class="category_heading" id="booking">Book Your Pooja</div>
+      <!-- Success message, will only be shown if it is set -->
+              
+      <div class="form_container">
+      
+        <form  action="submit.php" method="POST">
+          <label>Full Name:</label>
+          <input type="text" name="name" id="name" required>
+
+          <label>Mobile Number:</label>
+          <input type="text" name="phone" id="mobile" required>
+
+          <label>Gotra:</label>
+          <input type="text" name="gotra" id="gotra">
+
+          <label>Select Pooja:</label>
+          <select name="pooja" id="pooja">
+            <option>Kal Sarp Dosh</option>
+            <option>Rudrabhishek</option>
+            <option>Navgrah Shanti</option>
+            <option>Mahamrityunjay Jaap</option>
+          </select>
+
+          <label>Preferred Date:</label>
+          <input type="date" name="date" id="date">
+
+          <button type="submit">Book Now</button>
+        </form>
+        <script>
+              alert("Pooja booked successfully!");
+          </script>
+      <?php endif; ?>
+      </div>
+    </main>
+    <!-- Floating Buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/916264102282" class="float-btn whatsapp" target="_blank" title="Chat on WhatsApp">
+      <img src="images/waicon.jpg" alt="WhatsApp">
+    </a>
+
+    <a href="tel:+916264102282" class="float-btn phone" title="Call Now">
+      <img src="images/phone.jpg" alt="Call">
+    </a>
+  </div>
+
+
+    <footer id="contact">
+      <div class="footer_container">
+        <div class="footer_column">
+          <h3>Contact Information</h3>
+          <p>📍 Trayemkeshwar, Nashik, Maharashtra</p>
+          <p>📞 6264102282</p>
+          <p>✉️ shanimishra411@gmail.com</p>
+        </div>
+        <div class="footer_column">
+          <h3>Quick Links</h3>
+          <a href="#">Home</a>
+          <a href="#services">Services</a>
+          <a href="#booking">Book Pooja</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <hr>
+      <div class="copyright">
+        © 2025 Trayemkeshwar. All rights reserved.
+      </div>
+    </footer>
+
+  </body>
+  </html>
